@@ -3,6 +3,8 @@ MAINTAINER renewdoit
 
 ENV LEIN_ROOT true
 ENV BOOT_AS_ROOT yes
+ENV BOOT_EMIT_TARGET no
+ENV BOOT_VERSION 2.5.5
 
 RUN \
     cd /usr/local/bin; \
@@ -10,4 +12,4 @@ RUN \
     curl -fsSLo boot https://github.com/boot-clj/boot-bin/releases/download/latest/boot.sh; \
     chmod a+x lein boot; \
     lein; \
-    boot;
+    boot -u;
