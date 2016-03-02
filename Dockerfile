@@ -9,7 +9,10 @@ ENV BOOT_VERSION 2.5.5
 RUN \
     cd /usr/local/bin; \
     curl -fsSLo lein https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein; \
+    chmod a+x lein; \
+    lein;
+RUN \
+    cd /usr/local/bin; \
     curl -fsSLo boot https://github.com/boot-clj/boot-bin/releases/download/latest/boot.sh; \
-    chmod a+x lein boot; \
-    lein; \
-    boot -u;
+    chmod a+x boot; \ 
+    boot web -s doesnt/exist repl -e '(System/exit 0)'; 
