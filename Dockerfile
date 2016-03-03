@@ -16,3 +16,5 @@ RUN \
     curl -fsSLo boot https://github.com/boot-clj/boot-bin/releases/download/latest/boot.sh; \
     chmod a+x boot; \ 
     boot web -s doesnt/exist repl -e '(System/exit 0)'; 
+
+COPY profile.boot /root/.boot

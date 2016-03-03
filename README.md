@@ -3,4 +3,6 @@
 Both leiningen and boot are installed, using latest version
 
 ## 1.0.1
- 指明 boot 的环境和版本
+ correct install boot
+## 1.0.2
+ Let boot detect credentials in environment variables
