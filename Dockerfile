@@ -1,10 +1,10 @@
-FROM java:8 
+FROM renewdoit/docker-alpine-java:server-jre8 
 MAINTAINER renewdoit
 
 ENV LEIN_ROOT true
 ENV BOOT_AS_ROOT yes
 ENV BOOT_EMIT_TARGET no
-ENV BOOT_VERSION 2.5.5
+ENV BOOT_VERSION 2.7.1
 
 RUN \
     cd /usr/local/bin; \
