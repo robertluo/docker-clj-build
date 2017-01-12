@@ -7,6 +7,10 @@ ENV BOOT_EMIT_TARGET no
 ENV BOOT_VERSION 2.7.1
 
 RUN \
+    apk add --update curl && \
+    rm -rf /var/cache/apk/*
+
+RUN \
     cd /usr/local/bin; \
     curl -fsSLo lein https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein; \
     chmod a+x lein; \
