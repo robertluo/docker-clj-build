@@ -1,4 +1,4 @@
-FROM renewdoit/docker-alpine-java:server-jre8 
+FROM renewdoit/docker-alpine-java:jdk8
 MAINTAINER renewdoit
 
 ENV LEIN_ROOT true
