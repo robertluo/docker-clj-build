@@ -4,6 +4,6 @@
       (let [name (clojure.string/upper-case name)
             username (get-sys-env (str name "_USER"))
             password (get-sys-env (str name "_PASS"))
-            info (when (and username password) {:username username :password password})]
+            info (when (and username password) {:username username :password password :passphrase password})]
         (merge repo-map info))
       repo-map)))
