@@ -5,6 +5,7 @@ ENV LEIN_ROOT true
 ENV BOOT_AS_ROOT yes
 ENV BOOT_EMIT_TARGET no
 ENV BOOT_VERSION 2.7.2
+ENV BOOT_JVM_OPTIONS "-client -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Xverify:none -XX:-OmitStackTraceInFastThrow"
 
 RUN \
     apk add --update curl && \
