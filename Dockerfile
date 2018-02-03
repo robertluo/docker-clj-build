@@ -4,7 +4,7 @@ MAINTAINER renewdoit
 ENV LEIN_ROOT true
 ENV BOOT_AS_ROOT yes
 ENV BOOT_EMIT_TARGET no
-ENV BOOT_VERSION 2.7.1
+ENV BOOT_VERSION 2.7.2
 
 RUN \
     apk add --update curl && \
