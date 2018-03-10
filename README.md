@@ -1,4 +1,4 @@
-# A docker image for Clojure build tools 
+# A docker image for Clojure build tools
 
 Both leiningen and boot are installed, using latest version
 
@@ -10,11 +10,14 @@ Both leiningen and boot are installed, using latest version
 
 ## 1.1.0
  * Switch to docker-alpine-java base image to provide docker build capability.
- * Upgrade boot version to 2.7.1 
+ * Upgrade boot version to 2.7.1
 
 ## 1.1.2
  * Add :passphrase to boot credentials
 
 ## 1.1.3
  * Upgrade boot to 2.7.2
- * add boot options to speed up boot
+ * Add boot options to speed up boot
+
+## 1.2.0
+ * Add clojure 1.9.0.358 to build.
