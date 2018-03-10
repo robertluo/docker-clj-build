@@ -17,9 +17,13 @@ RUN \
     chmod a+x lein; \
     lein;
 RUN \
+    curl -O https://download.clojure.org/install/linux-install-1.9.0.358.sh; \
+    chmod +x linux-install-1.9.0.358.sh; \
+    ./linux-install-1.9.0.358.sh; \
+    clojure;
+RUN \
     cd /usr/local/bin; \
     curl -fsSLo boot https://github.com/boot-clj/boot-bin/releases/download/latest/boot.sh; \
-    chmod a+x boot; \ 
-    boot web -s doesnt/exist repl -e '(System/exit 0)'; 
-
+    chmod a+x boot; \
+    boot web -s doesnt/exist repl -e '(System/exit 0)';
 COPY profile.boot /root/.boot
