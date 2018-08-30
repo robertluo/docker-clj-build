@@ -21,3 +21,6 @@ Both leiningen and boot are installed, using latest version
 
 ## 1.2.0
  * Add clojure 1.9.0.358 to build.
+
+## 1.2.1
+ * Bump boot to 2.8.1, clj to 1.9.0.391
