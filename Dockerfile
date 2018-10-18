@@ -9,8 +9,7 @@ ENV BOOT_JVM_OPTIONS "-client -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Xv
 ENV CLJ_VERSION 1.9.0.391
 
 RUN \
-    apk add --update curl && \
-    rm -rf /var/cache/apk/*
+    apk add --no-cache curl openssh-client
 
 RUN \
     cd /usr/local/bin; \
