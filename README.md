@@ -24,3 +24,6 @@ Both leiningen and boot are installed, using latest version
 
 ## 1.2.1
  * Bump boot to 2.8.1, clj to 1.9.0.391
+
+## 1.2.2
+ * Bump boot to 2.8.2, clj to 1.9.0.397
