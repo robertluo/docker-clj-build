@@ -4,9 +4,9 @@ MAINTAINER renewdoit
 ENV LEIN_ROOT true
 ENV BOOT_AS_ROOT yes
 ENV BOOT_EMIT_TARGET no
-ENV BOOT_VERSION 2.8.1
+ENV BOOT_VERSION 2.8.2
 ENV BOOT_JVM_OPTIONS "-client -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Xverify:none -XX:-OmitStackTraceInFastThrow"
-ENV CLJ_VERSION 1.9.0.391
+ENV CLJ_VERSION 1.9.0.397
 
 RUN \
     apk add --no-cache curl openssh-client
