@@ -30,3 +30,6 @@ RUN \
   chmod a+x boot; \
   boot web -s doesnt/exist repl -e '(System/exit 0)';
 COPY profile.boot /root/.boot
+COPY entry-point.sh /
+COPY .ssh /root/.ssh
+ENTRYPOINT ["/entry-point.sh"]
