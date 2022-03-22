@@ -6,13 +6,13 @@ ENV BOOT_AS_ROOT yes
 ENV BOOT_EMIT_TARGET no
 ENV BOOT_VERSION 2.8.2
 ENV BOOT_JVM_OPTIONS "-client -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Xverify:none -XX:-OmitStackTraceInFastThrow"
-ENV CLJ_VERSION 1.10.0.411
+ENV CLJ_VERSION 1.10.3.1087
 
 RUN \
-  apk add --no-cache py-pip && pip install docker-compose
+  apk add --no-cache py-pip && pip install docker-compose==1.23.2
 
 RUN \
-  apk add --no-cache curl openssh-client
+  apk add --no-cache --update git curl openssh-client
 
 RUN \
   cd /usr/local/bin; \

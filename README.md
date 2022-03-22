@@ -41,3 +41,6 @@ To pull private git repository, you can set a variable `$SSH_PRIVATE_KEY`, this 
 
 ### 1.3.1
  * SSH client basic configuration
+ 
+### 1.4.0
+ * Upgrade clojure to 1.10.3.1087 to support tools.build.
